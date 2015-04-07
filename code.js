@@ -26,7 +26,9 @@ $(document).ready(function(){
 			console.log("hey hi")
 		};
 
+		for(var i = 0; i<10; i++) {
 		hello();
+		}
 	});
 
 })
