@@ -22,13 +22,12 @@ $(document).ready(function(){
 			console.log("its ah")
 		}	
 
-		var hello = function() {
-			console.log("hey hi")
+		var hello = function(name) {
+			console.log("hey hi" + name)
 		};
 
-		for(var i = 0; i<10; i++) {
-		hello();
-		}
+		hello("nate");
+		hello("dlane");
 	});
 
 })
