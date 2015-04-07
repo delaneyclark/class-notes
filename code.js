@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	var soyIt = function(tag, statement) {
 		if (tag === "img") {
-			$("body").append("<img src=" + statement + "/>")
+			var output= "<" + tag + " src=" + statement + " />";
 		} else {
 			var openTag = "<" + tag + ">";
 			var closeTag = "</" + tag + ">";
