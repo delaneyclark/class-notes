@@ -10,7 +10,7 @@ $(document).ready(function(){
 	}
 
 	var output = {
-		"log":showStuff
+		"log":showStuff,
 		"morelog":showMoreStuff
 	};
 
