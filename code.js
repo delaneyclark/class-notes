@@ -1,20 +1,18 @@
 // logic examples 
 $(document).ready(function(){
 
-	var showStuff = function(words){
-		$("body").append(words);
+
+
+	var soyIt = function(tag, statement) {
+		var openTag = "<" + tag + ">";
+		var closeTag = "</" + tag + ">";
+		var output = openTag + statement + closeTag;
+
+		$("body").append(output)
+
 	}
 
-	var showMoreStuff = function(words){
-		$("body").append("<h1>" + words + "</h1>")
-	}
-
-	var output = {
-		"log":showStuff,
-		"morelog":showMoreStuff
-	};
-
-	output.log("fdsHI");
-	output.morelog("oh wow");
+	soyIt("h1", "this is 1"),
+	soyIt("h2", "this is 2")
 
 });
