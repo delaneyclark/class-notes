@@ -5,10 +5,16 @@ $(document).ready(function(){
 		$("body").append(words);
 	}
 
+	var showMoreStuff = function(words){
+		$("body").append("<h1>" + words + "</h1>")
+	}
+
 	var output = {
 		"log":showStuff
+		"morelog":showMoreStuff
 	};
 
-	output.log("hihi hi HIHI")
+	output.log("fdsHI");
+	output.morelog("oh wow");
 
 });
