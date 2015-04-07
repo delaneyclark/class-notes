@@ -21,6 +21,12 @@ $(document).ready(function(){
 		} else {
 			console.log("its ah")
 		}	
+
+		var hello = function() {
+			console.log("hey hi")
+		};
+
+		hello();
 	});
 
 })
