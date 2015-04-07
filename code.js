@@ -1,21 +1,14 @@
 // logic examples 
 $(document).ready(function(){
 
+	var showStuff = function(words){
+		$("body").append(words);
+	}
 
-		var hello = function(name, weather) {
-			console.log("hey hi " + name + " isn't the " + weather + " nice?")
-		};
+	var output = {
+		"log":showStuff
+	};
 
-		hello("nate", "rain");
+	output.log("hihi hi HIHI")
 
-		//.something accesses the key 
-
-		var output = function(information) {
-			//do something to output variable 'information'
-		}
-
-		var console = {
-			"log": outpuf
-		}
-		console.log("aidfnaiso")
-	});
+});
